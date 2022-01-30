@@ -1,26 +1,17 @@
 package com.abdulbasit.spring.documented.webapp.Model;
 
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.util.UUID;
-
-@Document("Users")
 @Data
+@Document("user_company")
 @AllArgsConstructor
 @NoArgsConstructor
-public class UserData {
-    @Id
-    String id;
+public class CompanyData {
     String name;
-    String username;
-    String phone;
-    String email;
-    String website;
-    AddressData address;
-    CompanyData company;
+    String catchPhrase;
+    String bs;
 }
