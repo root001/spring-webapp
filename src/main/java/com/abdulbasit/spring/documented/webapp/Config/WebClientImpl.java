@@ -1,4 +1,4 @@
-package com.abdulbasit.spring.documented.webapp.Service;
+package com.abdulbasit.spring.documented.webapp.Config;
 
 import io.netty.channel.ChannelOption;
 import io.netty.handler.timeout.ReadTimeoutHandler;

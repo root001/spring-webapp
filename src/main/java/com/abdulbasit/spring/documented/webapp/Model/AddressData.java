@@ -1,18 +1,16 @@
 package com.abdulbasit.spring.documented.webapp.Model;
 
+import io.swagger.annotations.ApiModel;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
-
-import java.util.UUID;
 
 @Data
 @Document("user_address")
 @AllArgsConstructor
 @NoArgsConstructor
+@ApiModel(description = "Details about the User Address.")
 public class AddressData {
     String street;
     String city;
